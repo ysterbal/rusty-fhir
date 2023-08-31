@@ -1,0 +1,3 @@
+[submodule "schemafy"]
+	path = schemafy
+	url = https://github.com/ysterbal/schemafy.git
