@@ -5,9 +5,18 @@ authors = ["Johannes Van Zijl <ysterbal@gmail.com>"]
 edition = "2021"
 
 [dependencies]
-schemafy = "0.6.0"
+schemafy = {version = "0.6.0", path = "schemafy/"}
+schemafy_core = {version = "0.6.0", path = "schemafy/schemafy_core"}
+schemafy_lib = {version = "0.6.0", path = "schemafy/schemafy_lib"}
+
 serde = { version = "1.0.152", features = ["derive"] }
 serde_json = "1.0.93"
 
 [build-dependencies]
 serde_json = "1.0.93"
+schemafy = {version = "0.6.0", path = "schemafy/"}
+schemafy_core = {version = "0.6.0", path = "schemafy/schemafy_core"}
+schemafy_lib = {version = "0.6.0", path = "schemafy/schemafy_lib"}
+
+[features]
+schema-generate = []
